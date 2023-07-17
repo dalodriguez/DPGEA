@@ -1,4 +1,9 @@
 # DPGEA
+<p align="center">
+  <img width="1100"  src="DPGEA_prin.png">
+  <center>Illustrative picture of the original workflow used in https://www.biorxiv.org/content/10.1101/2023.07.06.547914v1</center>
+</p>
+
 Differential Pseudospatial Gradient Expression Analysis
 
 This package provides a framework to explore pseudospatial scRNAseq data obtained from Monocle3. The function calculates Differential Pseudospatial Gradient Expression (DPGEA) as transitional points within the pseusopace calculated using Monocle3
