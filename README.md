@@ -121,7 +121,7 @@ plot_cells(cds, color_cells_by = "pseudotime")
 
 
 <p align="center">
-  <img width="800"  src=" ">
+  <img width="800"  src="DPGEA.png">
 </p>
 
 <ul>
