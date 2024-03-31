@@ -1,7 +1,5 @@
 # DPGEA
 
-<b> ...CODE COMING SOON... </b> 
-
 <p align="center">
   <img width="1100"  src="DPGEA_prin.png">
   <center>Illustrative picture of the original workflow used in https://www.biorxiv.org/content/10.1101/2023.07.06.547914v1</center>
