@@ -9,7 +9,9 @@
 
 Differential Pseudospatial Gradient Expression Analysis
 
-This package provides a framework to explore pseudospatial scRNAseq data obtained from Monocle3. The function calculates Differential Pseudospatial Gradient Expression (DPGEA) as transitional points within the pseusopace calculated using Monocle3
+This repository provides a framework to explore pseudospatial scRNAseq. The function calculates Differential Pseudospatial Gradient Expression (DPGEA) as transitional points within the pseusopace calculated using Monocle3. 
+
+The repository allow to replicate the analysis available in Brunner et al. (2024). 
 
 ## Installation 
 ExPCom requires to have installed the package Seurat, monocle3 and Hmisc.
@@ -138,10 +140,11 @@ plot_cells(cds, color_cells_by = "pseudotime")
 
 The DPGEA function calculate whether each feature in the matrix correlate with a single cell type or whether they overlap several adjacent populations. The function provides a list of dataframes including the correlation matrix, the p_value matrix and the final classification. 
 
-The DPGEA function requires a cell data set and the columns names of the cds@colData@listData object containing the cell type and condition information. 
+The DPGEA function requires a cell data set and the columns names of the cds@colData@listData object containing the cell type and condition information. A sample dataset is available in the repository. 
 
 ```
-DPGEA_r <- DPGEA(cds, cell_type = "clusters", condition= "condition")
+data("TanCDS")
+DPGEA <- DPGEA(cds,  condition= "condition", threshold= 0.01)
 ```
 
 
