@@ -148,12 +148,6 @@ DPGEA <- DPGEA(cds,  condition= "condition", threshold= 0.01)
 ```
 
 
-<ul>
-  <li><b>Visualization</b></li>
-</ul>
-
-Blablabla
-
 
 ## Suggestions and contributions 
 Please use github issue tracker to report coding related issues or contact us directly, https://dalodriguez.github.io/Contact/
