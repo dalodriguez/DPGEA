@@ -9,7 +9,7 @@ Differential Pseudospatial Gradient Expression Analysis
 
 This repository provides a framework to explore pseudospatial scRNAseq. The function calculates Differential Pseudospatial Gradient Expression (DPGEA) as transitional points within the pseusopace calculated using Monocle3. 
 
-The repository allow to replicate the analysis available in Brunner et al. (2024). 
+The repository allow to replicate the analysis available in Brunner et al. (2024). The analysis can be done using the TanCDS file(downsampled) available in this repository. 
 
 ## Installation 
 ExPCom requires to have installed the package Seurat, monocle3 and Hmisc.
@@ -29,6 +29,8 @@ library(DPGEA)
 <ul>
   <li><b>Preparing your data</b></li>
 </ul>
+
+This step can be skipped using the TanCDS file available in this repository. 
 
 To use the DPGEA function you are required to provide a cell data set object where a pseudotime/pseudospace trajectory has been calculated. Please refer to monocle3 vignettes. As an example you can use the following code: 
 
