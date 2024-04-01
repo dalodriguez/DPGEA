@@ -14,7 +14,7 @@ DPGEA(
 \arguments{
 
 \item{cds}{a cds file where pseudotime has already been calculated}
-\item{condition}{the column of "cds@clusters@listData that contains the condition names}
+\item{condition}{the column of "cds@clusters@listData" that contains the condition names}
 \item{threshold}{the p value threshold, default is 0.01}
 \item{count_thres}{reduce the count matrix by selecting a min of counts (based on rowSums)}
 }
