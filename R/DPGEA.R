@@ -3,11 +3,12 @@
 #' @param cds a cds file where pseudotime has already been calculated
 #' @param condition the column of "cds@clusters@listData that contains the condition names
 #' @param threshold the p value threshold, default is 0.01
+#' @param count_thres reduce the count matrix by selecting a min of counts (based on rowSums). Default is 0
 #' @return A list of dataframes including correlations, p-values and the final classification
 #' @import Seurat Hmisc monocle3
 #' @export
 
-DPGEA <- function(cds, condition, threshold= 0.01) {
+DPGEA <- function(cds, condition, threshold= 0.01, count_thres = 0) {
 
         pseudotime <- data.frame(pseudotime = cds@principal_graph_aux@listData[["UMAP"]][["pseudotime"]],
                                  cell_type = cds@clusters@listData[["UMAP"]][["clusters"]],
@@ -39,6 +40,13 @@ DPGEA <- function(cds, condition, threshold= 0.01) {
                   colnames(pseubis) <- pseu$cell
                   matrix <- rbind(pseubis,matrix)
 
+                  gene_names <- rownames(matrix)
+                    matrix <- apply(matrix, 2, as.numeric)
+                  rownames(matrix) <- gene_names
+                  row_sums <- apply(matrix, 1, sum)
+                  
+                  matrix <- matrix[row_sums > count_thres, ]
+                  
               message(paste0("...Calculating correlations"))
                  cors <- rcorr(t(matrix))
 
@@ -99,6 +107,9 @@ DPGEA <- function(cds, condition, threshold= 0.01) {
               message("DONE!")
               
         }
+        names(DPGEA[["correlations"]]) <- as.character(unique(pseudotime$condition))
+        names(DPGEA[["p_values"]]) <- as.character(unique(pseudotime$condition))
+        names(DPGEA[["classification"]]) <- as.character(unique(pseudotime$condition))
+        
         return(DPGEA)
         }
-
