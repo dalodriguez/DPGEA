@@ -144,7 +144,7 @@ The DPGEA function requires a cell data set and the columns names of the cds@col
 
 ```
 data("TanCDS")
-DPGEA <- DPGEA(cds,  condition= "condition", threshold= 0.01)
+DPGEA <- DPGEA(cds,  condition= "condition", threshold= 0.01, count_thres = 0 )
 ```
 
 
