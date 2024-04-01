@@ -9,7 +9,11 @@ Differential Pseudospatial Gradient Expression Analysis
 
 This repository provides a framework to explore pseudospatial scRNAseq. The function calculates Differential Pseudospatial Gradient Expression (DPGEA) as transitional points within the pseusopace calculated using Monocle3. 
 
-The repository allow to replicate the analysis available in Brunner et al. (2024). The analysis can be done using the TanCDS file(downsampled) available in this repository. 
+The repository allow to replicate the analysis available in Brunner et al. (2024) to identify tanycyte/ependyma specific and overlaping markers. The analysis can be done using the TanCDS file(downsampled) available in this repository.
+
+<p align="center">
+  <img width="1100"  src="DPGEA_prin2.png">
+</p>
 
 ## Installation 
 ExPCom requires to have installed the package Seurat, monocle3 and Hmisc.
