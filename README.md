@@ -154,7 +154,7 @@ DPGEA <- DPGEA(cds,  condition= "condition", threshold= 0.01, count_thres = 0 )
 
 
 ## Suggestions and contributions 
-Please use github issue tracker to report coding related issues or contact us directly, https://dalodriguez.github.io/Contact/
+Please use github issue tracker to report coding related issues or contact me directly, https://dlopez-rodriguez.ch/Contact/
 
 ## How to cite?
 M. Brunner&#185;, D. Lopez-Rodriguez&#185;, A. Messina, B. Thorens, F Santoni&#178;, F. Langlet&#178;. Pseudospatial transcriptional gradient analysis of hypothalamic ependymal cells: towards a new tanycyte classification. BioRxiv preprint. https://doi.org/10.1101/2023.07.06.547914
