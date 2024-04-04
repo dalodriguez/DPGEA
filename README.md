@@ -16,7 +16,7 @@ The repository allow to replicate the analysis available in Brunner et al. (2024
 </p>
 
 ## Installation 
-ExPCom requires to have installed the package Seurat, monocle3 and Hmisc.
+DPGEA requires to have installed the package Seurat, monocle3 and Hmisc.
 ```
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
