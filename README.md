@@ -150,7 +150,7 @@ The DPGEA function calculate whether each feature in the matrix correlate with a
 The DPGEA function requires a cell data set and the columns names of the cds@colData@listData object containing the cell type and condition information. A sample dataset is available in the repository. 
 
 ```
-data("TanCDS")
+data("TanCDS", package="DPGEA")
 DPGEA <- DPGEA(cds,  condition= "condition", threshold= 0.01, count_thres = 0 )
 ```
 
