@@ -15,7 +15,10 @@ The repository allow to replicate the analysis available in Brunner et al. (2024
   <img width="600"  src="DPGEA_prin2.png">
 </p>
 
-## Installation 
+## Installation & System Requirements
+
+DPGEA is supported in Windows, MAC OS and Linux and requires only a standard computer with enough RAM to support the in-memory operations.
+
 DPGEA requires to have installed the package Seurat, monocle3 and Hmisc.
 ```
 if (!requireNamespace("BiocManager", quietly = TRUE))
@@ -167,5 +170,11 @@ https://www.biorxiv.org/content/10.1101/2023.07.06.547914v1
 
 
    ![DPGEA](https://visitor-badge.laobi.icu/badge?page_id=dalodriguez.DPGEA)
+
+
+## License
+This project is covered under the Creative Commons Zero v1.0 Universal Licnse
+
+
 
 
