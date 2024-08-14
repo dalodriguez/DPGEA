@@ -160,14 +160,10 @@ DPGEA <- DPGEA(data,  condition= "condition", threshold= 0.01, count_thres = 0 )
 Please use github issue tracker to report coding related issues or contact me directly, https://dlopez-rodriguez.ch/Contact/
 
 ## How to cite?
-M. Brunner&#185;, D. Lopez-Rodriguez&#185;, A. Messina, B. Thorens, F Santoni&#178;, F. Langlet&#178;. Pseudospatial transcriptional gradient analysis of hypothalamic ependymal cells: towards a new tanycyte classification. BioRxiv preprint. https://doi.org/10.1101/2023.07.06.547914
+
+Brunner, M.&#185;, Lopez-Rodriguez, D.&#185;, Estrada-Meza, J. et al. Fasting induces metabolic switches and spatial redistributions of lipid processing and neuronal interactions in tanycytes. Nat Commun 15, 6604 (2024). https://doi.org/10.1038/s41467-024-50913-w
 
 &#185; Co-First Author
-
-&#178; Co-Last Author
-
-https://www.biorxiv.org/content/10.1101/2023.07.06.547914v1
-
 
    ![DPGEA](https://visitor-badge.laobi.icu/badge?page_id=dalodriguez.DPGEA)
 
